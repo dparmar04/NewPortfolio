@@ -1,0 +1,27 @@
+.hero {
+    display: flex;
+    justify-content: center;
+}
+.intro{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.intro h1{
+    font-family: Dahlia;
+    font-size: 5rem;
+    color: black;
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+}
+
+.intro span{
+    background-image: url("../../assets/Web.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    background-size: cover;
+    display: inline-block;
+    
+}

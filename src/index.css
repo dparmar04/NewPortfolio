@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Kame";
+    src: url(./assets/668e75f5d1cc5a461ce7506c_KamePoster-Black.otf);
+}
+
+@font-face {
+    font-family: "Dahlia";
+    src: url(./assets/dahlia-medium.woff2);
+}
+
+.title {
+    font-family: Kame;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    padding: 10px 0;
+}

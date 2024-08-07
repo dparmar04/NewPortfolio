@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.home {
+    background-color: #3498db;
+}
+
+.about {
+    background-color: #2ecc71;
+}
+
+.projects {
+    background-color: #e74c3c;
+}
+.contact {
+    background-color: #e74c3c;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

@@ -1,0 +1,39 @@
+.navbar {
+    background-color: rgba(85, 85, 85, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 10px;
+    width: 50%;
+    z-index: 999;
+    padding: 20px 10px;
+    border-radius: 50px;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+.nav-items a span{
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.nav-items a:hover span{
+    width: 100%;
+    height: 2px;
+}
