@@ -16,9 +16,8 @@ const Hero = () => {
       { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
     );
 
-     // Apply a text scramble effect to the span element
-     gsap.fromTo(".intro h1 span", {
-      opacity:0.5,
+    gsap.fromTo(".intro h1 span", {
+      opacity: 0.8,
       text: "(SpiderMan)", // Scramble text (longer text for effect)
     }, {
       text: "Web Developer",
@@ -30,13 +29,13 @@ const Hero = () => {
         revealDelay: 0.2 // Delay before revealing the actual text
       },
       ease: 'power3.inOut',
-      delay: 0.5
+      delay: 0.8
     });
 
-     // Scroll-triggered animation
-     gsap.fromTo(
+    // Scroll-triggered animation
+    gsap.fromTo(
       ".intro h1",
-      { scale: 1.8, opacity: 1 , rotation: 360,},
+      { scale: 1.8, opacity: 1 },
       {
         scale: 0.8,
         duration: 1,
@@ -49,19 +48,22 @@ const Hero = () => {
         }
       }
     );
-    
+
+
+
 
   }, []);
 
   return (
-    <>
-    <h1 className='title'>Portfolio</h1>
-    <div className="section hero">
-      <div className='intro'>
-          <h1>Hello, Myself Dhruv & <br></br>I'm a <span>Web</span></h1>
+    <div className='home '>
+    <div className='background-gradient-animation'></div>
+      <h1 className='title'>Portfolio</h1>
+      <div className="section hero">
+        <div className='intro '>
+          <h1>Hello, Myself Dhruv & <br></br>I'm a <span className='target-region'></span></h1>
+        </div>
       </div>
     </div>
-    </>
   )
 }
 

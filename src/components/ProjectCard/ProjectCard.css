@@ -1,0 +1,67 @@
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+  width: 80%;
+
+  }
+  
+  .card-body {
+    background-color: #f9fafb;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    z-index: 1;
+  }
+
+  .card-container:hover .card-body {
+    transform: rotateX(15deg) rotateY(15deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-family: New Amsterdam;
+    font-size: 30px;
+    font-weight: bold;
+    color: #374151;
+  }
+  
+  .card-description {
+    color: #6b7280;
+    font-size: 20px;
+    white-space: nowrap;
+    font-family: Poppins;
+    margin-top: 0.5rem;
+    max-width: 18rem;
+  }
+  .card-body a {
+    cursor: none;
+  }
+  .card-image {
+    margin-top: 1rem;
+    transform: translateZ(50px);
+    object-fit: cover;
+    position: relative;
+  }
+
+
+  .card-image img {
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .card-footer img {
+    width: 50px;
+    object-fit: contain;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+  

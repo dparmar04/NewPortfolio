@@ -12,18 +12,16 @@ body, html {
 }
 
 .home {
-    background-color: #3498db;
+    background-color: #b0c4de;
 }
 
-.about {
-    background-color: #2ecc71;
-}
 
 .projects {
-    background-color: #e74c3c;
+    /* background-color: #e74c3c; */
 }
 .contact {
-    background-color: #e74c3c;
+    background-color: #f08080;
+    
 }
 
 .sticky {
