@@ -22,12 +22,15 @@
     object-fit: contain;
     margin: 10px 20px;
     clip-path: inset(0 0 100% 0); /* Start with the image hidden */
-  transition: clip-path 1s ease-in-out; /* Smooth transition */
+   transition: clip-path 1s ease-in-out;/* Smooth transition */
 }
 .image.reveal {
     clip-path: inset(0 0 0 0); /* Reveal the entire image */
   }
 
+  .reveal-text {
+     opacity: 0;
+  }
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
