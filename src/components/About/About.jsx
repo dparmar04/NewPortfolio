@@ -42,7 +42,6 @@ const About = () => {
         duration: 0.8,
         opacity: 0,
         scale: 0,
-        y: 80,
         rotationX: 180,
         transformOrigin: '0% 50% -50',
         ease: 'back',
@@ -87,4 +86,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About

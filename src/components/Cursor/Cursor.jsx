@@ -34,6 +34,7 @@ const Cursor = () => {
     // Handle mouse enter
     const handleMouseEnter = () => {
       cursorRing.innerHTML = "Click!";
+      cursorDot.style= "display: none";
       gsap.to(cursorRing, {
         scale: 5,
         duration: 0.3,
@@ -47,6 +48,7 @@ const Cursor = () => {
     // Handle mouse leave
     const handleMouseLeave = () => {
       cursorRing.innerHTML = "";
+      cursorDot.style= "display: block";
       gsap.to(cursorRing, {
         scale: 1,
         duration: 0.3,
@@ -80,4 +82,4 @@ const Cursor = () => {
   );
 };
 
-export default Cursor;
+export default Cursor;

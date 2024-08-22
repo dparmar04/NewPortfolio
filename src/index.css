@@ -1,42 +1,43 @@
-
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 body {
-    margin: 0;  
-    cursor: none;
+   margin: 0;
+   cursor: none;
 }
 
 #overlay {
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  position: absolute;
-  z-index: 10;
-}
-  
-@font-face {
-    font-family: "Kame";
-    src: url(./assets/668e75f5d1cc5a461ce7506c_KamePoster-Black.otf);
+   height: 100%;
+   width: 100%;
+   background-color: transparent;
+   position: absolute;
+   z-index: 10;
 }
 
 @font-face {
-    font-family: "Dahlia";
-    src: url(./assets/dahlia-medium.woff2);
+   font-family: "Kame";
+   src: url(./assets/668e75f5d1cc5a461ce7506c_KamePoster-Black.otf);
+}
+
+@font-face {
+   font-family: "Dahlia";
+   src: url(./assets/dahlia-medium.woff2);
 }
 
 .title {
-    font-family: Kame;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
-    color: white;
-    padding: 10px 0;
+   font-family: "New Amsterdam", sans-serif;
+   font-weight: 400;
+   margin: 0;
+   width: 100%;
+   text-align: center;
+   font-size: 5rem;
+   color: white;
+   padding: 10px 0;
 }
-.special-text {
-    font-family: "New Amsterdam", sans-serif;
-  font-weight: 400;
-    font-size: inherit;
-    color: #000;
+
+span {
+   font-family: "New Amsterdam", sans-serif;
+   font-weight: 400;
+   font-size: inherit;
+   color: #000000;
 }

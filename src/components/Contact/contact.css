@@ -1,40 +1,40 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   background: rgb(240, 128, 128);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background: rgba(176, 196, 222, 1);
    background: radial-gradient(circle at center,
-         rgba(240, 128, 128, 1) 0%,
-         rgba(237, 240, 230, 1) 30%,
-         rgba(176, 196, 222, 0.8) 60%,
-         rgba(176, 196, 222, 1) 80%);
+         rgba(176, 196, 222, 0.8) 0%,
+         rgb(238, 156, 156) 60%,
+         rgb(238, 156, 156) 80%);
    background-size: 200% 200%;
    transition: background-position 0.1s;
 }
 
 
 .contact-container {
-    width: 80%;
-    padding: 20px;
+   width: 80%;
+   padding: 20px;
 }
 
 .contact-form {
-    position: relative;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    border-radius: 8px;
-    padding: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+   position: relative;
+   background: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(5px);
+   border-radius: 8px;
+   padding: 50px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   z-index: 1;
 
 }
+
 /* Style for the form groups */
 .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
 }
 
 .form-group input::placeholder,
@@ -42,36 +42,43 @@
    font-weight: normal;
    color: white;
 }
+
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    background-color: #706c6c;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    outline-color: #e74c3c;
-    text-transform: uppercase;
+   width: 100%;
+   padding: 10px;
+   margin: 10px;
+   border: 1px solid #ccc;
+   background-color: #706c6c;
+   border-radius: 6px;
+   font-size: 16px;
+   font-weight: 500;
+   color: white;
+   outline-color: #e74c3c;
+   text-transform: uppercase;
 }
 
 button {
-    width: 70%;
-    margin: 0 auto;
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    font-size: 24px;
-    border-radius: 12px;
-    font-family: New Amsterdam;
-    text-transform: uppercase;
-    padding: 10px;
+   width: 70%;
+   margin: 0 auto;
+   background-color: #f03f2b;
+   color: white;
+   border: none;
+   font-size: 24px;
+   border-radius: 12px;
+   font-family: New Amsterdam;
+   text-transform: uppercase;
+   padding: 10px;
+   transition: all 0.25s ease;
 }
 
 button:hover {
-    background-color: #f13e2a;
+   background-color: #e95c4c;
+}
+
+button:active {
+   background-color: #f03f2b;
+
 }
 
 input[type="number"]::-webkit-outer-spin-button,

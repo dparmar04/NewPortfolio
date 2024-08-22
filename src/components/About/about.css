@@ -1,126 +1,156 @@
 .about {
-    height: 100vh;
-    background-color: lightcoral;
-    display: flex;
-    flex-direction: column;
+   height: 100vh;
+   background-color: lightcoral;
+   display: flex;
+   flex-direction: column;
 }
+
 .about-bg {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden; /* Ensures content doesn't overflow */
-    position: relative;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   overflow: hidden;
+   /* Ensures content doesn't overflow */
+   position: relative;
 }
 
 .about-bg img {
-    display: block;
-    width: 30%;
-    height: 80%;
-    float: right;
-    object-fit: contain;
-    margin: 10px 20px;
-    clip-path: inset(0 0 100% 0); /* Start with the image hidden */
-   transition: clip-path 1s ease-in-out;/* Smooth transition */
+   display: block;
+   width: 30%;
+   height: 80%;
+   float: right;
+   object-fit: contain;
+   margin: 10px 20px;
+   clip-path: inset(0 0 100% 0);
+   /* Start with the image hidden */
+   transition: clip-path 1s ease-in-out;
+   /* Smooth transition */
 }
-.image.reveal {
-    clip-path: inset(0 0 0 0); /* Reveal the entire image */
-  }
 
-  .reveal-text {
-     opacity: 0;
-  }
+.image.reveal {
+   clip-path: inset(0 0 0 0);
+   /* Reveal the entire image */
+}
+
+.reveal-text {
+   opacity: 0;
+}
+
 .marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    /* background-color: #79dde4; */
-    border-radius: 40%;
+   overflow: hidden;
+   white-space: nowrap;
+   width: 95%;
+   margin: 0 auto;
+   /* background-color: #79dde4; */
 }
 
 .marquee {
-    display: inline-block;
-    padding-left: 100%; /* Start off screen */
-    transition: transform 1s ease-in-out;
+   display: inline-block;
+   padding-left: 100%;
+   /* Start off screen */
+   transition: transform 1s ease-in-out;
 }
+
 .marquee.animate {
-  animation: marquee 15s linear infinite; /* Adjust speed as needed */
+   animation: marquee 15s linear infinite;
+   /* Adjust speed as needed */
 }
 
 .title span {
-    color: rgb(0, 0, 0); /* Default color */
+   color: rgb(0, 0, 0);
+   /* Default color */
 }
 
 .title .even {
-    color: rgb(255, 255, 255); /* Different color for even instances */
+   color: rgb(255, 255, 255);
+   /* Different color for even instances */
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 50%;
-    border-radius: 12px;
-    padding: 20px 10px;
-    background: rgba(138, 118, 118, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(140,140,140,0.25);
-    z-index: 2;
-    color: whitesmoke;
-    overflow: hidden;
-}
-.about-content h1 {
-    font-size: 30px;
-    font-weight: normal;
-    font-style: italic;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0px;
-    margin: 0;
-    line-height: 1.8;
-    text-transform: capitalize;
-    overflow: hidden;
-    transition: transform 1s ease; 
-}
-.typewriter-text {
-  display: inline-block;
-  position: relative;
-  overflow: hidden; 
-  opacity: 0; 
-  transform: translateX(-100%); /* Start off-screen */
-  transition: opacity 1.5s ease, transform 1s ease;
-}
-.typewriter-text.reveal {
-  opacity: 1; /* Make text visible */
-  transform: translateX(0); /* Move text into view */
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 50%;
+   border-radius: 12px;
+   padding: 60px;
+   background: rgba(138, 118, 118, 0.5);
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(140, 140, 140, 0.25);
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   z-index: 2;
+   color: whitesmoke;
+   overflow: hidden;
 }
 
-.shape{
-    position: absolute;
-    z-index: 0;
-    width: 30%;
-    height: 60%;
-    left: 15%;
-    background: linear-gradient(64deg, #5f5f5f 23%, #c7c9c6 80%);
-    animation: blob 5s ease-in-out infinite;
-  }
-  
-  @keyframes blob {
-    0%, 100% {
-      border-radius:65% 100% 80% 100%
-    }
-    25% {
-      border-radius:100% 80% 100% 65%
-    }
-    50% {
-      border-radius:80% 100% 65% 100%
-    }
-    75% {
-      border-radius:100% 65% 100% 80%
-    }
-  }
+.about-content h1 {
+   font-size: 32px;
+   font-weight: normal;
+   font-style: italic;
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+   letter-spacing: 0px;
+   margin: 0;
+   line-height: 1.8;
+   text-transform: capitalize;
+   overflow: hidden;
+   transition: transform 1s ease;
+}
+
+.typewriter-text {
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
+   opacity: 0;
+   transform: translateX(-100%);
+   /* Start off-screen */
+   transition: opacity 1.5s ease, transform 1s ease;
+}
+
+.typewriter-text.reveal {
+   opacity: 1;
+   /* Make text visible */
+   transform: translateX(0);
+   /* Move text into view */
+}
+
+.shape {
+   position: absolute;
+   z-index: 0;
+   width: 30%;
+   height: 60%;
+   left: 15%;
+   background: linear-gradient(64deg, #5f5f5f 23%, #c7c9c6 80%);
+   animation: blob 5s ease-in-out infinite;
+}
+
+@keyframes blob {
+
+   0%,
+   100% {
+      border-radius: 65% 100% 80% 100%
+   }
+
+   25% {
+      border-radius: 100% 80% 100% 65%
+   }
+
+   50% {
+      border-radius: 80% 100% 65% 100%
+   }
+
+   75% {
+      border-radius: 100% 65% 100% 80%
+   }
+}
+
 @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+   0% {
+      transform: translateX(0);
+   }
+
+   100% {
+      transform: translateX(-100%);
+   }
 }
