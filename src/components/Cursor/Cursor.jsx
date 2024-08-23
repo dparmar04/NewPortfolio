@@ -53,7 +53,7 @@ const Cursor = () => {
         scale: 1,
         duration: 0.3,
         backgroundColor: 'transparent',
-        borderWidth: '1px',
+        borderWidth: '2px',
       });
     };
 

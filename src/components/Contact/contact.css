@@ -4,15 +4,68 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   background: rgba(176, 196, 222, 1);
-   background: radial-gradient(circle at center,
-         rgba(176, 196, 222, 0.8) 0%,
-         rgb(238, 156, 156) 60%,
-         rgb(238, 156, 156) 80%);
-   background-size: 200% 200%;
-   transition: background-position 0.1s;
+   height: 100%;
+   background-color: #1565c0;
 }
-
+.lines {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   margin: auto;
+   width: 90vw;
+   pointer-events: none; /* Ensures the lines don't block interaction with other elements */
+ }
+ 
+ .line {
+   position: absolute;
+   width: 1px;
+   height: 100%;
+   top: 0;
+   left: 50%;
+   background: rgba(255, 255, 255, 0.1);
+   overflow: hidden;
+ }
+ 
+ .line::after {
+   content: '';
+   display: block;
+   position: absolute;
+   height: 15vh;
+   width: 100%;
+   top: -50%;
+   left: 0;
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+   animation: drop 7s 0s infinite;
+   animation-fill-mode: forwards;
+   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+ }
+ 
+ .line:nth-child(1) {
+   margin-left: -25%;
+ }
+ 
+ .line:nth-child(1)::after {
+   animation-delay: 2s;
+ }
+ 
+ .line:nth-child(3) {
+   margin-left: 25%;
+ }
+ 
+ .line:nth-child(3)::after {
+   animation-delay: 2.5s;
+ }
+ 
+ @keyframes drop {
+   0% {
+     top: -50%;
+   }
+   100% {
+     top: 110%;
+   }
+ }
 
 .contact-container {
    width: 80%;
@@ -21,10 +74,10 @@
 
 .contact-form {
    position: relative;
-   background: rgba(255, 255, 255, 0.5);
+   background: rgba(255, 255, 255, 0.308);
    backdrop-filter: blur(5px);
    border-radius: 8px;
-   padding: 50px;
+   padding: 30px 50px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    z-index: 1;
 
@@ -40,7 +93,7 @@
 .form-group input::placeholder,
 .form-group textarea::placeholder {
    font-weight: normal;
-   color: white;
+   color: rgb(0, 0, 0);
 }
 
 .form-group input,
@@ -49,19 +102,19 @@
    padding: 10px;
    margin: 10px;
    border: 1px solid #ccc;
-   background-color: #706c6c;
+   /* background-color: #706c6c; */
    border-radius: 6px;
    font-size: 16px;
    font-weight: 500;
-   color: white;
-   outline-color: #e74c3c;
+   color: rgb(0, 0, 0);
+   outline-color: transparent;
    text-transform: uppercase;
 }
 
 button {
    width: 70%;
    margin: 0 auto;
-   background-color: #f03f2b;
+   background-color: #1565c0;
    color: white;
    border: none;
    font-size: 24px;
@@ -73,7 +126,8 @@ button {
 }
 
 button:hover {
-   background-color: #e95c4c;
+   background-color: #fff;
+   color: #1565c0;
 }
 
 button:active {
@@ -85,4 +139,23 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
    -webkit-appearance: none;
    margin: 0;
+}
+.end {
+   display: flex;
+   align-items: center;
+   gap: 50px;
+   padding: 10px 20px;
+}
+.end h1 {
+   margin: 0;
+}
+.end a img {
+   width: 50px;
+   height: 50px;
+   object-fit: cover;
+}
+.end p{
+   font-family: "New Amsterdam", sans-serif;
+   font-size: 22px;
+   text-transform: uppercase;
 }

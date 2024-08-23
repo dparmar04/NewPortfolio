@@ -1,6 +1,6 @@
 .about {
    height: 100vh;
-   background-color: lightcoral;
+   background-color: #669bbc;
    display: flex;
    flex-direction: column;
 }
@@ -58,10 +58,6 @@
    /* Adjust speed as needed */
 }
 
-.title span {
-   color: rgb(0, 0, 0);
-   /* Default color */
-}
 
 .title .even {
    color: rgb(255, 255, 255);
@@ -70,12 +66,12 @@
 
 .about-content {
    display: flex;
-   justify-content: center;
+   justify-content: start;
    flex-wrap: wrap;
    width: 50%;
    border-radius: 12px;
-   padding: 60px;
-   background: rgba(138, 118, 118, 0.5);
+   padding: 30px 60px;
+   background: transparent;
    backdrop-filter: blur(10px);
    border: 1px solid rgba(140, 140, 140, 0.25);
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -85,14 +81,14 @@
 }
 
 .about-content h1 {
-   font-size: 32px;
+   font-size: 36px;
    font-weight: normal;
-   font-style: italic;
-   text-align: center;
+   /* font-style: italic; */
+   text-align: justify;
    font-family: "Poppins", sans-serif;
    letter-spacing: 0px;
    margin: 0;
-   line-height: 1.8;
+   line-height: 1.6;
    text-transform: capitalize;
    overflow: hidden;
    transition: transform 1s ease;
@@ -114,7 +110,20 @@
    transform: translateX(0);
    /* Move text into view */
 }
-
+.resume-btn {
+   font-family: "New Amsterdam", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   border-radius: 12px;
+   background-color: #001d3d;
+   width: auto;
+   padding: 10px 50px;
+   margin-top: 10px;
+}
+.resume-btn:hover {
+   background-color: white;
+   color: black;
+}
 .shape {
    position: absolute;
    z-index: 0;

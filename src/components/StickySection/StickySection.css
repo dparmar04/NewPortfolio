@@ -12,7 +12,12 @@ body, html {
 }
 
 .home {
-    background-color: #468be4;
+    /* background-color: #468be4; */
+    /* background: url("../../assets/bg.mp4"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 
@@ -20,7 +25,7 @@ body, html {
     /* background-color: #e74c3c; */
 }
 .contact {
-    background-color: #f08080;
+   
     
 }
 

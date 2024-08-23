@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './contact.css';
+import '../../index.css'
+import GithubIcon from '../../assets/github.png';
+import LinkedIn from '../../assets/linkedin.png';
 import gsap from 'gsap';
 
 const Contact = () => {
@@ -25,6 +28,15 @@ const Contact = () => {
   }, []);
   return (
     <div className='section contact' ref={contactBgRef}>
+ 
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+
       <h1 className='title'>Contact Me</h1>
       <div className='contact-container'>
         <div className='contact-form'>
@@ -46,6 +58,15 @@ const Contact = () => {
           </form>
         </div>
       </div>
+        <div className='end'>
+          <a href="https://github.com/dparmar04" target='_blank'>
+            <img src={GithubIcon} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/dhruv-parmar-459289255" target='_blank'>
+            <img src={LinkedIn} alt="" /> 
+          </a>
+          <p>Made by dhruv parmar</p>
+        </div>
     </div>
   );
 };

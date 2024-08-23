@@ -62,7 +62,7 @@ const About = () => {
    <div class="marquee-container">
       <div className={`marquee ${inView ? 'animate' : ''}`}>
           <h1 class="title">
-              <span> About Me</span> |  
+              <span>About Me</span> |  
               <span class="even"> About Me</span> |  
               <span> About Me</span> | 
               <span class="even"> About Me</span> |  
@@ -76,7 +76,8 @@ const About = () => {
     <div className={`about-bg ${inView ? 'reveal' : ''}`} >
         <div class="shape"></div>
       <div className='about-content'>
-        <h1 className={`typewriter-text ${inView ? 'reveal' : ''}`} ref={textRef}><span className='special-text'>I’m Dhruv Parmar</span>, a web wizard crafting magic with React and juggling a tech degree. When I’m not fixing bugs, I’m perfecting animations and geeking out over new tech. Want to know more? Let’s connect and build something awesome together!</h1>
+        <h1 className={`typewriter-text ${inView ? 'reveal' : ''}`} ref={textRef}>I’m Dhruv Parmar, a web wizard crafting magic with React and juggling a tech degree. When I’m not fixing bugs, I’m perfecting animations and geeking out over new tech. Want to know more? Let’s connect and build something awesome together!</h1>
+        <a className='resume-btn'>Resume</a>
       </div>
 
       <img ref={shapeRef} src="https://images.unsplash.com/photo-1567282026984-fbad0228317d?w=350" alt="Background" className={`image ${inView ? 'reveal' : ''}`} />

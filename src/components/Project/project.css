@@ -1,7 +1,7 @@
 .projects {
     height: 100vh;
     width: 100%;
-    background-color: #b0c4de;
+    background-color: #0582ca;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +31,12 @@
     transition: all 0.5s ease;
     font-family: Poppins;
     text-transform: uppercase;
-    border: 1px solid gray;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
 
   }
   .project-item:hover {
-    background-color: aliceblue;
+    background-color: rgb(102, 166, 223);
   }
   
   .project-item.active {
@@ -47,24 +48,24 @@
   }
   
   .project-item:nth-child(1).active {
-    color: #574c4c;
-    border-bottom: 5px solid #574c4c;
-    letter-spacing: 5px;
+    color: #374151;
+    border-bottom: 5px solid #374151;
+    letter-spacing: 3px;
   }
   .project-item:nth-child(2).active {
-    color: #5e11ff;
-    border-bottom: 5px solid #5e11ff;
-    letter-spacing: 5px;
+    color: #180583;
+    border-bottom: 5px solid #180583;
+    letter-spacing: 3px;
   }
   .project-item:nth-child(3).active {
-    color: #ff6a1f;
-    border-bottom: 5px solid #ff6a1f;
-    letter-spacing: 5px;
+    color: #FF9800;
+    border-bottom: 5px solid #FF9800;
+    letter-spacing: 3px;
   }
   .project-item:nth-child(4).active {
-    color: #023e82;;
-    border-bottom: 5px solid #023e82;
-    letter-spacing: 5px;
+    color: #00254d;;
+    border-bottom: 5px solid #00254d;
+    letter-spacing: 3px;
   }
   .project-display {
     width: 40%;
