@@ -60,7 +60,7 @@
 
 
 .title .even {
-   color: rgb(255, 255, 255);
+   color: #001d3d;
    /* Different color for even instances */
 }
 
@@ -116,9 +116,11 @@
    font-size: 24px;
    border-radius: 12px;
    background-color: #001d3d;
+   color: white;
    width: auto;
    padding: 10px 50px;
    margin-top: 10px;
+   text-decoration: none;
 }
 .resume-btn:hover {
    background-color: white;

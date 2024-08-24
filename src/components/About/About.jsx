@@ -77,7 +77,9 @@ const About = () => {
         <div class="shape"></div>
       <div className='about-content'>
         <h1 className={`typewriter-text ${inView ? 'reveal' : ''}`} ref={textRef}>I’m Dhruv Parmar, a web wizard crafting magic with React and juggling a tech degree. When I’m not fixing bugs, I’m perfecting animations and geeking out over new tech. Want to know more? Let’s connect and build something awesome together!</h1>
-        <a className='resume-btn'>Resume</a>
+        <a className='resume-btn' href='https://acrobat.adobe.com/id/urn:aaid:sc:AP:400e1d9e-5f1c-441e-9381-fd7bb5f1ffb5' target='_blank'>
+          Resume
+        </a>
       </div>
 
       <img ref={shapeRef} src="https://images.unsplash.com/photo-1567282026984-fbad0228317d?w=350" alt="Background" className={`image ${inView ? 'reveal' : ''}`} />
