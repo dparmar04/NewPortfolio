@@ -4,7 +4,7 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: 100%;
+   height: auto;
    background-color: #1565c0;
 }
 .lines {
@@ -182,4 +182,45 @@ input[type="number"]::-webkit-inner-spin-button {
    font-size: 24px;
    color: whitesmoke;
  }
- 
+ @media screen and (max-width:830px) {
+   .contact {
+      height: auto;
+   }
+   .contact-form {    
+      padding: 30px 20px;
+   }
+ }
+
+ @media screen and (max-width: 768px) {
+   .contact {
+      height: 100vh;
+   }
+   .contact-container {
+      width: 90%;
+   }
+   .lines {
+      margin: 0 10px;
+   }
+   .contact-form {
+      padding: 30px 10px;
+  }
+}
+
+
+@media screen and (max-width:450px) {
+   .end a img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+  }
+  .form-group input, .form-group textarea {
+   font-size: 12px;
+  }
+  button {
+   width: 60%;
+   font-size: 20px;
+  }
+  .end {
+   gap: 20px;
+  }
+}
