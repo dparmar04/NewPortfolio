@@ -37,12 +37,13 @@ canvas {
 .title span {
     color: white;
 }
-.intro span{
-    background-image: url("../../assets/Web.jpg");
+.intro span {
+    background-image: url(/src/assets/Web.jpg);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #ffffff00;
     -webkit-font-smoothing: antialiased;
-    background-size: cover;
+    background-size: 240px;
+    background-position: top;
     display: inline-block;
     font-family: Dahlia;
 }

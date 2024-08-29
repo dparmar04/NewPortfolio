@@ -25,9 +25,9 @@ const Hero = () => {
     // GSAP animation
     gsap.fromTo(
       '.title span',
-      { y: '-100%', opacity: 0 },
+      { y: -100, opacity: 0 },
       {
-        y: '0%',
+        y: 0,
         opacity: 1,
         duration: 0.8,
         ease: 'power3.out',
@@ -38,20 +38,23 @@ const Hero = () => {
     // Animate the entire h1 element
     gsap.fromTo(
       ".intro h1",
-      { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
+      { x: 500, opacity: 0 , duration:2},
+      { x: 0, opacity: 1, duration: 2, ease: 'power3.out'}
     );
 
     gsap.fromTo(".title" , {
       y:-100,
-      opacity:0
+      opacity:0,
     }, 
     {
       y:0,
       opacity:1,
       duration:0.8,
+      ease: "bounce.out",
     })
 
+
+    //Scramble Text
     gsap.fromTo(".intro h1 span", {
       opacity: 1,
       text: "(SpiderMan)", // Scramble text (longer text for effect)

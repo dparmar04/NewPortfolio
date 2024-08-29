@@ -58,9 +58,9 @@
    /* Adjust speed as needed */
 }
 
-
 .title .even {
-   color: #001d3d;
+   color: #001d3d00;
+   -webkit-text-stroke: 1px #001d3d;
    /* Different color for even instances */
 }
 
