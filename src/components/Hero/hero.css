@@ -4,7 +4,16 @@
     flex-wrap: wrap;
     z-index: 2;
 }
-
+.logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+.logo svg {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
 .video-bg {
     position: absolute;
     width: 100%;
@@ -34,6 +43,7 @@ canvas {
     font-size: 4rem;
     color: rgb(0, 0, 0);
 }
+
 .title span {
     color: white;
 }
@@ -66,6 +76,10 @@ canvas {
     .intro h1 {
         font-size: 1.5rem;
     } 
+    .logo svg {
+        height: 40px;
+        width: 40px;
+    }
 }
 @media screen and (max-width:410px) {
     .intro h1 {
@@ -74,5 +88,4 @@ canvas {
     .about-content h1 {
         font-size: 20px;
     }
-
 }
