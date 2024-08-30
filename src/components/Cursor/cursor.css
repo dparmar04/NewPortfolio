@@ -31,6 +31,8 @@
 
 @media screen and (max-width:768px) {
     #cursorDot, #cursorRing {
-        display: none;
+        height: 0px;
+        width: 0px;
+
     }
 }
