@@ -2,6 +2,7 @@ import {React, useEffect, useRef} from 'react'
 import './about.css';
 import gsap from 'gsap'
 import { useInView } from 'react-intersection-observer';
+import Self from '../../assets/dhruvparmar.jpg'
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -82,7 +83,7 @@ const About = () => {
         </a>
       </div>
 
-      <img ref={shapeRef} src="https://images.unsplash.com/photo-1567282026984-fbad0228317d?w=350" alt="Background" className={`image ${inView ? 'reveal' : ''}`} />
+      <img ref={shapeRef} src={Self} alt="Background" className={`image ${inView ? 'reveal' : ''}`} />
       
     </div>
   </div>
