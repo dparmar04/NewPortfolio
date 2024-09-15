@@ -2,7 +2,7 @@ import {React, useEffect, useRef} from 'react'
 import './about.css';
 import gsap from 'gsap'
 import { useInView } from 'react-intersection-observer';
-import Self from '../../assets/dhruvparmar.jpg'
+import Self from '../../assets/profile.jpeg'
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -81,9 +81,8 @@ const About = () => {
         <a className='resume-btn' href='https://acrobat.adobe.com/id/urn:aaid:sc:AP:400e1d9e-5f1c-441e-9381-fd7bb5f1ffb5' target='_blank'>
           Resume
         </a>
-      </div>
-
-      <img ref={shapeRef} src={Self} alt="Background" className={`image ${inView ? 'reveal' : ''}`} />
+      </div>     
+         <img ref={shapeRef} src={Self} alt="Background" className={`image ${inView ? 'reveal' : ''}`} />
       
     </div>
   </div>

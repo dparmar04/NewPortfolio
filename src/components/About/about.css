@@ -28,7 +28,10 @@
    transition: clip-path 1s ease-in-out;
    /* Smooth transition */
 }
-
+img.image.reveal {
+   border-radius: 12px;
+   object-fit: cover;
+}
 .image.reveal {
    clip-path: inset(0 0 0 0);
    /* Reveal the entire image */
