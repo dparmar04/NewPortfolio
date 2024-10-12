@@ -4,9 +4,9 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-   height: auto;
    background-color: #1565c0;
 }
+
 .lines {
    position: absolute;
    top: 0;
@@ -15,10 +15,11 @@
    height: 100%;
    margin: auto;
    width: 90vw;
-   pointer-events: none; /* Ensures the lines don't block interaction with other elements */
- }
- 
- .line {
+   pointer-events: none;
+   /* Ensures the lines don't block interaction with other elements */
+}
+
+.line {
    position: absolute;
    width: 1px;
    height: 100%;
@@ -26,9 +27,9 @@
    left: 50%;
    background: rgba(255, 255, 255, 0.1);
    overflow: hidden;
- }
- 
- .line::after {
+}
+
+.line::after {
    content: '';
    display: block;
    position: absolute;
@@ -40,32 +41,33 @@
    animation: drop 7s 0s infinite;
    animation-fill-mode: forwards;
    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
- }
- 
- .line:nth-child(1) {
+}
+
+.line:nth-child(1) {
    margin-left: -25%;
- }
- 
- .line:nth-child(1)::after {
+}
+
+.line:nth-child(1)::after {
    animation-delay: 2s;
- }
- 
- .line:nth-child(3) {
+}
+
+.line:nth-child(3) {
    margin-left: 25%;
- }
- 
- .line:nth-child(3)::after {
+}
+
+.line:nth-child(3)::after {
    animation-delay: 2.5s;
- }
- 
- @keyframes drop {
+}
+
+@keyframes drop {
    0% {
-     top: -50%;
+      top: -50%;
    }
+
    100% {
-     top: 110%;
+      top: 110%;
    }
- }
+}
 
 .contact-container {
    width: 80%;
@@ -141,21 +143,35 @@ input[type="number"]::-webkit-inner-spin-button {
    -webkit-appearance: none;
    margin: 0;
 }
+
 .end {
    display: flex;
    align-items: center;
    gap: 50px;
    padding: 10px 20px;
 }
+
 .end h1 {
    margin: 0;
 }
+
 .end a img {
    width: 50px;
    height: 50px;
    object-fit: cover;
 }
-.end p{
+
+.end a {
+   transition: all 0.3s ease;
+   border-radius: 50%;
+}
+
+.end a:hover {
+   background: #d5d5d59e;
+   transform: scale(1.05);
+}
+
+.end p {
    font-family: "New Amsterdam", sans-serif;
    font-size: 22px;
    text-transform: uppercase;
@@ -173,36 +189,41 @@ input[type="number"]::-webkit-inner-spin-button {
    border-radius: 5px;
    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
    z-index: 1000;
- }
- 
- .modal p {
+}
+
+.modal p {
    font-family: "New Amsterdam", sans-serif;
    margin: 0;
    font-size: 24px;
    color: rgb(0, 0, 0);
- }
- @media screen and (max-width:830px) {
+}
+
+@media screen and (max-width:830px) {
    .contact {
       height: auto;
    }
-   .contact-form {    
+
+   .contact-form {
       padding: 30px 20px;
    }
- }
+}
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
    .contact {
       height: 100vh;
    }
+
    .contact-container {
       width: 90%;
    }
+
    .lines {
       margin: 0 10px;
    }
+
    .contact-form {
       padding: 30px 10px;
-  }
+   }
 }
 
 
@@ -211,15 +232,19 @@ input[type="number"]::-webkit-inner-spin-button {
       width: 40px;
       height: 40px;
       object-fit: contain;
-  }
-  .form-group input, .form-group textarea {
-   font-size: 12px;
-  }
-  button {
-   width: 60%;
-   font-size: 20px;
-  }
-  .end {
-   gap: 20px;
-  }
+   }
+
+   .form-group input,
+   .form-group textarea {
+      font-size: 12px;
+   }
+
+   button {
+      width: 60%;
+      font-size: 20px;
+   }
+
+   .end {
+      gap: 20px;
+   }
 }
